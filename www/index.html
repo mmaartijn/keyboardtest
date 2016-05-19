@@ -47,18 +47,18 @@
         </div>
         <div class="card">
           <div class="item item-text-wrap">
-            <i>Keyboard shown at: {{keyboardShowTime | date:'HH:ss' }}</i>
-            <br /><br />
-            <i>Keyboard hidden at: {{keyboardHideTime | date:'HH:ss' }}</i>
+            <i>Keyboard shown at: {{keyboardShowTime | date:&apos;HH:mmss&apos; }}</i>
+            <br><br>
+            <i>Keyboard hidden at: {{keyboardHideTime | date:&apos;HH:mm:ss&apos; }}</i>
           </div>
         </div>
         <div class="card" ng-if="isSubmitted">
           <div class="item item-text-wrap">
             Hello <strong>{{submittedFirstName}} {{submittedLastName}}</strong>!
-            <br />
-            <br />
-            We'll send an email to the following address:
-            <br />
+            <br>
+            <br>
+            We&apos;ll send an email to the following address:
+            <br>
             <strong>{{submittedEmail}}</strong>
           </div>
         </div>
